@@ -4,12 +4,17 @@ void main() {
   runApp(const MyApp());
 }
 
+String getName(String a, String b) {
+  return a + b + 'ewww';
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(getName('Amand ', 'Vivek '));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
